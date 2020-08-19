@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/001_link_userservice_provider/001_link_userservice_provider.iml" filepath="$PROJECT_DIR$/001_link_userservice_provider/001_link_userservice_provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/002_link_consumer/002_link_consumer.iml" filepath="$PROJECT_DIR$/002_link_consumer/002_link_consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/003_link_interface/003_link_interface.iml" filepath="$PROJECT_DIR$/003_link_interface/003_link_interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/004_link_userservice_provider/004_link_userservice_provider.iml" filepath="$PROJECT_DIR$/004_link_userservice_provider/004_link_userservice_provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/005_link_consumer/005_link_consumer.iml" filepath="$PROJECT_DIR$/005_link_consumer/005_link_consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/006_zk_interface/006_zk_interface.iml" filepath="$PROJECT_DIR$/006_zk_interface/006_zk_interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/007_zk_userservice_provider/007_zk_userservice_provider.iml" filepath="$PROJECT_DIR$/007_zk_userservice_provider/007_zk_userservice_provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/008_zk_consumer/008_zk_consumer.iml" filepath="$PROJECT_DIR$/008_zk_consumer/008_zk_consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/009_zk_userservice_multi_provider/009_zk_userservice_multi_provider.iml" filepath="$PROJECT_DIR$/009_zk_userservice_multi_provider/009_zk_userservice_multi_provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/010_zk_consumer_multi/010_zk_consumer_multi.iml" filepath="$PROJECT_DIR$/010_zk_consumer_multi/010_zk_consumer_multi.iml" />
+    </modules>
+  </component>
+</project>

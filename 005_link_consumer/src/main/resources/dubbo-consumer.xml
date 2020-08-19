@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:dubbo="http://dubbo.apache.org/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://dubbo.apache.org/schema/dubbo
+       http://dubbo.apache.org/schema/dubbo/dubbo.xsd">
+
+    <!--声明dubbo服务消费者者的名称：保证唯一性-->
+    <dubbo:application name="005_link_consumer"/>
+
+    <!--引用远程接口服务-->
+    <dubbo:reference id="userService"
+            interface="com.nilswang.dubbo.service.UserService"
+            url="dubbo://localhost:20880"
+            registry="N/A" />
+
+</beans>

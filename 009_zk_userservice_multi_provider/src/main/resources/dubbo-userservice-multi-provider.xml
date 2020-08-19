@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:dubbo="http://dubbo.apache.org/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://dubbo.apache.org/schema/dubbo
+       http://dubbo.apache.org/schema/dubbo/dubbo.xsd">
+
+    <!--声明dubbo服务提供者的名称：保证唯一性-->
+    <dubbo:application name="009_zk_userservice_multi_provider"/>
+
+    <!--设置dubbo使用的协议和端口号-->
+    <dubbo:protocol name="dubbo" port="20880"/>
+
+    <!--指定zookeeper注册中心和端口号-->
+    <dubbo:registry address="zookeeper://localhost:2181"/>
+
+    <!--不管是否一个接口有多个实现类，只要服务提供者暴露接口服务的时候指定了版本号
+    那么消费者引用远程接口服务的时候必须指定版本号-->
+    <!--暴露服务接口1-->
+    <dubbo:service interface="com.nilswang.dubbo.service.UserService"
+                   ref="userService1" version="1.0.0"/>
+
+    <!--暴露服务接口2-->
+    <dubbo:service interface="com.nilswang.dubbo.service.UserService"
+                   ref="userService2" version="2.0.0"/>
+
+    <!--加载业务实现类到spring容器-->
+    <bean id="userService1" class="com.nilswang.dubbo.service.impl.UserServiceImpl"/>
+    <bean id="userService2" class="com.nilswang.dubbo.service.impl.UserServiceImpl2"/>
+
+</beans>
